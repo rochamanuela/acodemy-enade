@@ -5,14 +5,21 @@
     padding: 0;
 }
 
+:root {
+    --blue: #007BFF;
+    --turquoise: #11D1D4;
+    --salmon: #FF6F61;
+    --black: #1F1F1F;
+    --white: #FFF;
+}
+
 body {
     display: flex;
     flex-direction: column;
 
-    background-color: #fff;
+    background-color: var(--white);
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
-    /* font-family: 'Sora', sans-serif; */
 }
 
 p {
@@ -20,7 +27,7 @@ p {
 }
 
 .header .title h1 {
-    color: #1F1F1F;
+    color: var(--black);
     font-family: Sora;
     font-size: 45px;
     font-style: normal;
@@ -31,49 +38,69 @@ p {
 .navbar {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     height: 90px;
+    padding: 0 8%;
 }
 
 .navbar a {
-    color: #000;
+    color: var(--black);
     font-family: Poppins;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     text-decoration: none;
+    transition: .3s;
+}
+
+.navbar .links a:hover {
+    color: var(--blue);
 }
 
 .navbar .links {
     display: flex;
-    gap: 65px;
+    gap: 50px;
 }
 
 .navbar .logotipo {
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 600;
+    font-family: Sora;
+
+    display: flex;
+    flex-direction: row;
 }
 
-.navbar .buttons .button {
+.navbar .logotipo .code {
+    color: var(--blue);
+}
+
+.navbar .buttons {
+    display: flex;
+    gap: 14px;
+}
+
+.navbar .buttons a {
     padding: 8px 32px;
-    background-color: #007BFF;
+    background-color: var(--blue);
     font-family: Poppins;
     font-size: 14px;
-    border: 2px solid #007BFF;
+    border: 2px solid var(--blue);
     border-radius: 8px;
     color: #fff;
     cursor: pointer;
-    transition: .3s;
+    transition: .5s;
 }
 
 #deactivate {
-    background-color: #fff;
-    color: #025ec0;
+    background-color: var(--white);
+    color: var(--blue);
 }
 
-.navbar .buttons .button:hover {
-    background-color: #007BFF;
+.navbar .buttons a:hover, #deactivate:hover {
+    background-color: #005fc4;
+    border-color: #005fc4;
     color: #fff;
 }
 
@@ -146,41 +173,42 @@ main .center-topics .item {
     flex: 1 30%
 }
 
+main .bottom-topic {
+    margin-bottom: 100px;
+}
+
 hr {
     border: 3px solid;
     margin-bottom: 20px;
 }
 
-#blue { border-color: #007BFF; }
-#turquesa { border-color: #11D1D4; }
-#salmon { border-color: #FF6F61; }
+.number-topic {
+    font-size: 50px;
+}
+
+#blue { border-color: var(--blue); }
+#turquesa { border-color: var(--turquoise); }
+#salmon { border-color: var(--salmon); }
 
 .footer {
-    background-color: #1f1f1f;
+    background-color: var(--black);
     width: 100%;
     height: 200px;
 }
 
-/* teste do scroll */
 body::-webkit-scrollbar {
     width: 5px;
-    /* Largura da barra de rolagem completa */
     z-index: -1;
     overflow: scroll;
 }
 
 body::-webkit-scrollbar-track {
-    background: transparent;
-    /* Deixar a área de rastreamento transparente */
+    background: var(--black);
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #1f1f1f;
-    /* Cor do polegar da barra de rolagem */
+    background-color: #555555;
     border-radius: 0px;
-    /* Arredondamento do polegar da barra de rolagem */
-    border: 3px solid transparent;
-    /* Cria um espaço em torno do polegar da barra de rolagem */
+    border: 1px solid transparent;
     z-index: -1;
-    /* Coloca a barra de rolagem na frente do conteúdo */
 }
