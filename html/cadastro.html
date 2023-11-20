@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style_cad.css">
+    <title>Cadastre-se</title>
+</head>
+
+<body>
+    <div class="logotipo">
+        <p>a
+        <div class="code">code</div>my</p>
+    </div>
+
+    <main>
+        <div class="container-main">
+            <h1>Cadastro</h1>
+            <p>Preencha os campos abaixo para criar sua conta na Acodemy</p>
+
+            <form action="">
+                <label for="">Nome completo</label>
+                <input type="text" name="nome_estudante" id="" class="custom-input" placeholder="Ex.: Manuela Rocha">
+
+                <label for="">E-mail institucional</label>
+                <input type="email" name="email_estudante" id="" class="custom-input" placeholder="Name@aluno.ifsp.edu.br">
+                
+                <div class="school">
+                    <div class="school-column">
+                        <label for="">Instituição</label>
+                        <select name="instituicoes" id="instituicoes" class="custom-input">
+                            <option value="default" id="default">Selecione</option>
+                            <option value="IFSP Hortolândia">IFSP Hortolândia</option>
+                            <option value="Unasp Hortolândia">Unasp Hortolândia</option>
+                            <option value="PUC Campinas">PUC Campinas</option>
+                            <option value="Unicamp">Unicamp</option>
+                        </select>
+                    </div>
+                    <div class="school-column">
+                        <label for="">Turma</label>
+                        <input type="text" name="email" id="" class="custom-input">
+                    </div>
+                </div>
+
+                <label for="">Senha</label>
+                <input type="password" name="senha" class="custom-input" id="password">
+
+                <label for="">Confirme sua senha</label>
+                <input type="password" name="confirmar_senha" class="custom-input" id="password">
+
+                <input type="submit" value="Prosseguir">
+                <p class="link-register">Já possui uma conta? <a href="login.html">Entre aqui.</a></p>
+            </form>
+
+            <!--
+                <button id="toggleBtn" onclick="togglePassword()">
+                    <img id="toggleImg" src="../images/icons/visibility_off.png" alt="Mostrar Senha" width="24" height="24">
+                </button>
+    
+                <button id="toggleBtn2" onclick="togglePassword()">
+                    <img id="toggleImg" src="../images/icons/visibility_off.png" alt="Mostrar Senha" width="24" height="24">
+                </button>
+            -->
+
+            <script src="../scripts/script.js"></script>
+        </div>
+    </main>
+</body>
+
+</html>

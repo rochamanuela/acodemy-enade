@@ -34,35 +34,20 @@
                 <input type="email" name="email" id="" class="custom-input" placeholder="Name@aluno.ifsp.edu.br">
 
                 <label for="">Senha</label>
-                <input type="password" name="senha" class="custom-input" placeholder="Entre com sua senha">
+                <input type="password" name="senha" class="custom-input" id="password"
+                    placeholder="Entre com sua senha">
 
                 <a href="" class="recover-password">Esqueci minha senha</a>
 
                 <input type="submit" value="Entrar">
-                <p class="link-register">Não possui uma conta? <a href="">Cadastre-se aqui.</a></p>
+                <p class="link-register">Não possui uma conta? <a href="cadastro.html">Cadastre-se aqui.</a></p>
             </form>
 
-            
+            <button id="toggleBtn" onclick="togglePassword()">
+                <img id="toggleImg" src="../images/icons/visibility_off.png" alt="Mostrar Senha" width="24" height="24">
+            </button>
 
-            <div class="password-container">
-                <input type="password" id="password" class="password-input" placeholder="Digite sua senha">
-                <button id="toggleBtn" onclick="togglePassword()">mostrar</button>
-            </div>
-
-            <script>
-                function togglePassword() {
-                    const passwordInput = document.getElementById('password');
-                    const toggleBtn = document.getElementById('toggleBtn');
-
-                    if (passwordInput.type === 'password') {
-                        passwordInput.type = 'text';
-                        toggleBtn.textContent = 'mostrar'; // Troca para olho aberto
-                    } else {
-                        passwordInput.type = 'password';
-                        toggleBtn.textContent = 'ocultar'; // Troca para olho fechado
-                    }
-                }
-            </script>
+            <script src="../scripts/script.js"></script>
         </div>
     </main>
 </body>

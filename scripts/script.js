@@ -1,15 +1,15 @@
-function myFunction() {
-    var x = document.getElementById("myNavbar");
-    if (x.className === "navbar") {
-      x.className += " responsive";
-    } else {
-      x.className = "navbar";
-    }
-}
+// função para mostrar e ocultar a senha
+function togglePassword() {
+  const passwordInput = document.getElementById('password');
+  const toggleImg = document.getElementById('toggleImg');
 
-function color() {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
-    //var menu = document.body.getElementsByClassName.topnav;
-    //menu.classList.toggle("dark-mode");
+  if (passwordInput.type === 'password') {
+      passwordInput.type = 'text';
+      toggleImg.src = '../images/icons/visibility.png';
+      toggleImg.alt = 'Ocultar Senha';
+  } else {
+      passwordInput.type = 'password';
+      toggleImg.src = '../images/icons/visibility_off.png';
+      toggleImg.alt = 'Mostrar Senha';
+  }
 }
