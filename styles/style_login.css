@@ -20,6 +20,11 @@ body {
     background-color: var(--white);
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
+
+    background-image: url('../images/wallpapers/wallpaper_login.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .logotipo {
@@ -38,7 +43,8 @@ body {
     color: var(--blue);
 }
 
-main, form{
+main,
+form {
     display: flex;
     flex-direction: column;
 }
@@ -49,27 +55,175 @@ main {
     height: 90vh;
 }
 
+h1 {
+    color: #1F1F1F;
+    font-family: Sora;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 33px;
+    /* 82.5% */
+    margin-bottom: 9px;
+}
+
 .container-main {
     width: 450px;
 }
 
-.btn-google
+.btn-google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    height: 45px;
+    cursor: pointer;
+    margin-top: 30px;
+
+    color: #1F1F1F;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 33px;
+
+    transition: .5s;
+}
+
+.btn-google:hover {
+    border: 2px solid var(--black);
+    background-color: var(--black);
+    color: var(--white);
+}
+
 /* Estilos para o campo de entrada */
-.custom-input, .btn-google {
+.custom-input,
+.btn-google {
     border-radius: 8px;
     border: 2px solid rgba(201, 203, 218, 0.77);
     background-color: #FFF;
-    height: 45px;
     font-family: Poppins;
     font-size: 14px;
-  }
+    transition: .5s;
+}
 
-  .custom-input {
+.custom-input {
     padding: 0 18px;
-  }
-  
-  /* Estilizando o placeholder */
-  .custom-input::placeholder {
-    color: rgba(201, 203, 218, 0.77); /* Cor do placeholder personalizada */
-  }
-  
+    height: 41px;
+    outline: none;
+}
+
+.custom-input::placeholder {
+    color: rgba(201, 203, 218, 0.77);
+}
+
+.custom-input:focus {
+    border: 2px solid var(--blue);
+}
+
+input[type="submit"] {
+    border-radius: 8px;
+    border: 2px solid #007BFF;
+    background: #007BFF;
+    height: 45px;
+    font-family: Poppins;
+    color: var(--white);
+    cursor: pointer;
+}
+
+form a {
+    align-self: flex-end;
+}
+
+form .link-register {
+    margin: auto;
+    margin-top: 15px;
+
+    color: #1F1F1F;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 33px;
+}
+
+form .link-register a,
+.recover-password {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: 600;
+}
+
+.recover-password {
+    font-size: 12px;
+    line-height: 33px;
+    margin-bottom: 14px;
+}
+
+form label {
+    color: #1F1F1F;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 33px;
+    margin-top: 6px;
+}
+
+.container-line {
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 13px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(201, 203, 218, 0.77);
+}
+
+.text-over-line {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ABADBB;
+    font-weight: 400;
+    background-color: #FFF;
+    width: 250px;
+    text-align: center;
+}
+
+@media screen and (max-width: 530px) {
+    .container-main {
+        width: 85%;
+    }
+
+    .logotipo {
+        margin-top: 0;
+        margin-left: 0;
+        position: absolute;
+        top: 25px;
+        left: 7.5%;
+    }
+}
+
+
+/* teste da senha */
+
+.password-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.password-input {
+    padding-right: 30px;
+    /* Espaço para o ícone */
+}
+
+.password-toggle {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
