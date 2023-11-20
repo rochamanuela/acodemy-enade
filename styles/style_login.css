@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Sora:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --blue: #007BFF;
+    --turquoise: #11D1D4;
+    --salmon: #FF6F61;
+    --black: #1F1F1F;
+    --white: #FFF;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--white);
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.logotipo {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Sora;
+
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 25px;
+    margin-left: 45px;
+}
+
+.logotipo .code {
+    color: var(--blue);
+}
+
+main, form{
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.container-main {
+    width: 450px;
+}
+
+.btn-google
+/* Estilos para o campo de entrada */
+.custom-input, .btn-google {
+    border-radius: 8px;
+    border: 2px solid rgba(201, 203, 218, 0.77);
+    background-color: #FFF;
+    height: 45px;
+    font-family: Poppins;
+    font-size: 14px;
+  }
+
+  .custom-input {
+    padding: 0 18px;
+  }
+  
+  /* Estilizando o placeholder */
+  .custom-input::placeholder {
+    color: rgba(201, 203, 218, 0.77); /* Cor do placeholder personalizada */
+  }
+  

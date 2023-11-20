@@ -13,6 +13,11 @@
     --white: #FFF;
 }
 
+html {
+    scroll-behavior: smooth;
+    /* Adiciona a rolagem suave para todos os elementos */
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -282,12 +287,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-
-
-
-
 /* tudo do footer tá aqui */
-
 .footer {
     background-color: var(--black);
     color: var(--white);
@@ -342,7 +342,6 @@ body::-webkit-scrollbar-thumb {
     font-size: 45px;
     font-weight: 500;
     font-family: Sora;
-
     margin-bottom: 20px;
 }
 
@@ -381,19 +380,14 @@ body::-webkit-scrollbar-thumb {
     border: 1px solid #005fc4;
 }
 
-/* Para estilizar o placeholder */
 .custom-input::placeholder {
-
     color: rgba(255, 255, 255, 0.80);
-
     text-align: justify;
     font-family: Poppins;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
-
-    /* 166.667% */
 }
 
 input[type="submit"] {
@@ -444,29 +438,25 @@ input[type="submit"]:hover {
     margin-bottom: 4px;
 }
 
-
-/* Estilos para .media-links */
 .media-links {
     display: flex;
-    flex-wrap: wrap; /* Garante que os elementos sejam quebrados para a próxima linha quando necessário */
+    flex-wrap: wrap;
 }
 
-/* Estilos para .member-social-media */
 .member-social-media {
-    flex: 1 0 25%; /* Por padrão, exibirá 4 elementos por linha */
+    flex: 1 0 25%;
     box-sizing: border-box;
     padding: 10px;
 }
 
-/* Media queries para ajustar o layout responsivo */
 @media screen and (max-width: 780px) {
     .member-social-media {
-        flex: 1 0 50%; /* Exibe dois elementos por linha */
+        flex: 1 0 50%;
     }
 }
 
 @media screen and (max-width: 400px) {
     .member-social-media {
-        flex: 1 0 100%; /* Exibe um elemento por linha */
+        flex: 1 0 100%;
     }
 }
