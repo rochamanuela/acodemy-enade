@@ -98,7 +98,8 @@ p {
     color: var(--blue);
 }
 
-.navbar .buttons a:hover, #deactivate:hover {
+.navbar .buttons a:hover,
+#deactivate:hover {
     background-color: #005fc4;
     border-color: #005fc4;
     color: #fff;
@@ -182,19 +183,39 @@ hr {
     margin-bottom: 20px;
 }
 
+.text-topic {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 10px;
+    gap: 12px;
+}
+
 .number-topic {
-    font-size: 50px;
+    font-size: 26px;
+    text-align: center;
+    width: 60px;
+    font-family: 'Sora', sans-serif;
 }
 
-#blue { border-color: var(--blue); }
-#turquesa { border-color: var(--turquoise); }
-#salmon { border-color: var(--salmon); }
-
-.footer {
-    background-color: var(--black);
-    width: 100%;
-    height: 200px;
+#blue {
+    border-color: var(--blue);
 }
+
+#turquesa {
+    border-color: var(--turquoise);
+}
+
+#salmon {
+    border-color: var(--salmon);
+}
+
+
 
 body::-webkit-scrollbar {
     width: 5px;
@@ -211,4 +232,241 @@ body::-webkit-scrollbar-thumb {
     border-radius: 0px;
     border: 1px solid transparent;
     z-index: -1;
+}
+
+
+/* adicionando responsividade */
+@media screen and (max-width: 1300px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 65px;
+        padding: 0 8%;
+    }
+
+    .header .img {
+        width: 90%;
+        height: auto;
+        margin: auto;
+    }
+
+    .header .title h3 {
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+
+    main .top-topic,
+    main .center-topics,
+    main .bottom-topic {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .top-topic,
+    main .bottom-topic {
+        align-items: center;
+        justify-content: space-between;
+        gap: 70px
+    }
+
+    .header .img {
+        width: 90%;
+        height: auto;
+        margin: auto;
+    }
+}
+
+
+
+
+
+
+/* tudo do footer tá aqui */
+
+.footer {
+    background-color: var(--black);
+    color: var(--white);
+    width: auto;
+    height: auto;
+    padding: 4% 8%;
+    gap: 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer hr {
+    border: 1px solid var(--white);
+}
+
+.footer p {
+    color: #FFF;
+    text-align: justify;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.footer .infos {
+    width: 60%;
+}
+
+.footer .adress {
+    width: 40%;
+}
+
+.footer .infos a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 12px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-top: 7px;
+}
+
+.footer .infos a img {
+    width: 20px;
+    height: 20px;
+}
+
+.footer .logotipo {
+    font-size: 45px;
+    font-weight: 500;
+    font-family: Sora;
+
+    margin-bottom: 20px;
+}
+
+.footer .text {
+    margin-bottom: 30px;
+}
+
+#social-media {
+    color: #FFF;
+    font-family: Sora;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    margin-bottom: 20px;
+}
+
+.custom-input {
+    border-radius: 8px;
+    background-color: #333;
+    color: white;
+    border: 1px solid #333;
+    outline: none;
+
+    font-family: Poppins;
+    width: 90%;
+    height: 110px;
+    padding: 4% 5%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    transition: .5s;
+}
+
+.custom-input:focus {
+    border: 1px solid #005fc4;
+}
+
+/* Para estilizar o placeholder */
+.custom-input::placeholder {
+
+    color: rgba(255, 255, 255, 0.80);
+
+    text-align: justify;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+
+    /* 166.667% */
+}
+
+input[type="submit"] {
+    padding: 8px 32px;
+    background-color: var(--blue);
+    font-family: Poppins;
+    font-size: 12px;
+    border: 2px solid var(--blue);
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+    width: 100%;
+    margin-top: 0;
+}
+
+input[type="submit"]:hover {
+    background-color: #005fc4;
+    border-color: #005fc4;
+    color: #fff;
+}
+
+.footer .adress p {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1300px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        gap: 10%;
+        padding: 8%;
+    }
+
+    .footer .infos,
+    .footer .adress {
+        width: 100%;
+    }
+
+    .footer hr {
+        margin: 40px 0;
+    }
+}
+
+.member-social-media p {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+
+/* Estilos para .media-links */
+.media-links {
+    display: flex;
+    flex-wrap: wrap; /* Garante que os elementos sejam quebrados para a próxima linha quando necessário */
+}
+
+/* Estilos para .member-social-media */
+.member-social-media {
+    flex: 1 0 25%; /* Por padrão, exibirá 4 elementos por linha */
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+/* Media queries para ajustar o layout responsivo */
+@media screen and (max-width: 780px) {
+    .member-social-media {
+        flex: 1 0 50%; /* Exibe dois elementos por linha */
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .member-social-media {
+        flex: 1 0 100%; /* Exibe um elemento por linha */
+    }
 }
