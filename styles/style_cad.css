@@ -43,6 +43,14 @@ body {
     color: var(--blue);
 }
 
+a .logotipo {
+    color: var(--black);
+}
+
+a {
+    text-decoration: none;
+}
+
 main,
 form {
     display: flex;
