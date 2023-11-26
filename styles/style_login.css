@@ -238,3 +238,27 @@ form label {
         cursor: pointer;
     }
 }
+
+/* ajustes da tela de erro */
+.btn-redirect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 45px;
+    margin-top: 30px;
+    border-radius: 8px;
+    border: 2px solid #007BFF;
+    background: #007BFF;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn-redirect a {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 33px;
+    font-family: Poppins;
+    color: var(--white);
+}
