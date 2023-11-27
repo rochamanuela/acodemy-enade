@@ -20,21 +20,47 @@
     <p>Seu conteúdo protegido está aqui.</p>
     
 
-    <div>
+    <div class="sidebar">
         sidebar
         <a href="logout.php">Sair</a>
     </div>
 
-    <div>
+    <div class="sidebar">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+        <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+        </ul>
+    </div>
+
+    <div class="ranking">
         ranking
     </div>
 
-    <div>
+    <div class="questions">
         criar perguntas
     </div>
 
-    <div>
+    <div class="students">
         cadastrar alunos
     </div>
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            const content = document.querySelector('.content');
+            
+            if (sidebar.style.left === '-250px') {
+                sidebar.style.left = '0';
+                content.style.marginLeft = '250px';
+            } else {
+                sidebar.style.left = '-250px';
+                content.style.marginLeft = '0';
+            }
+        }
+
+    </script>
 </body>
 </html>
