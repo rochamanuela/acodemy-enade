@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style_home_center.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
-    <title>Testes</title>
+    <title>Home</title>
 </head>
 
 <body>
     <nav class="menu-lateral">
         <ul>
-            <li class="item-menu">
+            <li class="item-menu" id="user">
                 <a href="#">
-                    <span class="icon"><i class="bi bi-person"></i></span>
-                    <span class="txt-link">Usuário</span>
+                    <span class="icon" id="user"><i class="bi bi-person-fill"></i></span>
+                    <span class="txt-link" id="user">Manuela</span> <!-- aqui vai o nome do usuário que estiver logado no momento -->
                 </a>
             </li>
             <li class="item-menu" id="activate">
@@ -42,7 +42,7 @@
                     <span class="txt-link">Configurações</span>
                 </a>
             </li>
-            <li class="item-menu">
+            <li class="item-menu logout">
                 <a href="#">
                     <span class="icon"><i class="bi bi-box-arrow-right"></i></span>
                     <span class="txt-link">Sair</span>
@@ -98,36 +98,36 @@
                     <h1 class="area-title">Provas anteriores</h1>
                     <p class="area-description">Explore com detalhes as provas anteriores do ENADE, proporcionando a você 
                         a oportunidade de escolher criteriosamente as perguntas que melhor se 
-                        alinham aos objetivos de estudo de seus alunos</p>
+                        alinham aos objetivos de estudo de seus alunos. Use os links abaixo para ver os arquivos em PDF.</p>
                         <div class="provas-container">
                             <div class="item-prova">
                                 <p class="ano-prova">2021</p>
                                 <div class="circle"><i class="bi bi-file-earmark"></i></div>
-                                <a href="../provas/2021/prova.pdf" download="prova_2021.pdf">prova</a>
+                                <a href="../provas/2021/prova.pdf" download="prova_2021.pdf"><b>prova</b></a>
                                 <a href="../provas/2021/gabarito.pdf" download="gabarito_2021.pdf">gabarito</a>
                             </div>
                             <div class="item-prova">
                                 <p class="ano-prova">2017</p>
                                 <div class="circle"><i class="bi bi-file-earmark"></i></div>
-                                <a href="../provas/2017/prova.pdf" download="prova_2017.pdf">prova</a>
+                                <a href="../provas/2017/prova.pdf" download="prova_2017.pdf"><b>prova</b></a>
                                 <a href="../provas/2017/gabarito.pdf" download="gabarito_2017.pdf">gabarito</a>
                             </div>
                             <div class="item-prova">
                                 <p class="ano-prova">2014</p>
                                 <div class="circle"><i class="bi bi-file-earmark"></i></div>
-                                <a href="../provas/2014/prova.pdf" download="prova_2014.pdf">prova</a>
+                                <a href="../provas/2014/prova.pdf" download="prova_2014.pdf"><b>prova</b></a>
                                 <a href="../provas/2014/gabarito.pdf" download="gabarito_2014.pdf">gabarito</a>
                             </div>
                             <div class="item-prova">
                                 <p class="ano-prova">2011</p>
                                 <div class="circle"><i class="bi bi-file-earmark"></i></div>
-                                <a href="../provas/2011/prova.pdf" download="prova_2011.pdf">prova</a>
+                                <a href="../provas/2011/prova.pdf" download="prova_2011.pdf"><b>prova</b></a>
                                 <a href="../provas/2011/gabarito.pdf" download="gabarito_2011.pdf">gabarito</a>
                             </div>
                             <div class="item-prova">
                                 <p class="ano-prova">2008</p>
                                 <div class="circle"><i class="bi bi-file-earmark"></i></div>
-                                <a href="../provas/2008/prova.pdf" download="prova_2008.pdf">prova</a>
+                                <a href="../provas/2008/prova.pdf" download="prova_2008.pdf"><b>prova</b></a>
                                 <a href="../provas/2008/gabarito.pdf" download="gabarito_2008.pdf">gabarito</a>
                             </div>
                         </div>
@@ -149,8 +149,8 @@
                             e eficiente, proporcionando facilidade e agilidade nas tarefas
                             relacionadas à administração acadêmica.</p>
                         <div class="btn-container">
-                            <a href="" class="btn-cad">Cadastrar</a>
-                            <a href="" class="btn-view">Visualizar</a>
+                            <a href="#" class="btn-cad">Cadastrar</a>
+                            <a href="#" class="btn-view">Visualizar</a>
                         </div>
                     </div>
                 </div>
