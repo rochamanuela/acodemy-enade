@@ -15,14 +15,13 @@
 
 html {
     scroll-behavior: smooth;
-    /* Adiciona a rolagem suave para todos os elementos */
 }
 
 body {
     display: flex;
     flex-direction: column;
 
-    background-color: var(--white);
+    background-color: #F7F8FA;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
 
@@ -31,11 +30,12 @@ body {
 
 nav.menu-lateral {
     /*width: 250px;*/
-    width: 60px;
+    width: 58px;
     height: 80%;
-    background-color: var(--blue);
+    background-color: var(--white);
     padding: 40px 0;
-    border-radius: 0 12px 12px 0;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 2px 3px 8px 0px rgba(219, 228, 248, 0.5);
 
     position: fixed;
     top: 5%;
@@ -46,7 +46,7 @@ nav.menu-lateral {
 }
 
 nav.menu-lateral:hover {
-    width: 250px;
+    width: 200px;
 }
 
 .btn-expandir {
@@ -55,7 +55,7 @@ nav.menu-lateral:hover {
 }
 
 .btn-expandir > i {
-    color: var(--white);
+    color: #000;
     font-size: 24px;
     cursor: pointer;
 }
@@ -66,10 +66,10 @@ ul {
 }
 
 ul li.item-menu a {
-    color: var(--white);
+    color: #000;
     text-decoration: none;
     font-size: 14px;
-    padding: 12px 10px;
+    padding: 5px 5px;
     margin-left: 8px;
     
     display: flex;
@@ -86,8 +86,23 @@ ul li.item-menu a span.icon > i{
 
 ul li.item-menu {
     transition: .3s;
+    margin: 5px 5px;
+    border-radius: 5px;
 }
 
-ul li.item-menu:hover {
-    background-color: #4b4b4b;
+ul li.item-menu:hover, #activate {
+    background-color: #CFE6FF;
+    color: #0256AF;
+}
+
+ul li.item-menu a:hover {
+    color: #0256AF;
+}
+
+
+
+
+/* a partir daqui não tem nada da navbar */
+main {
+    padding: 0 8%;
 }
