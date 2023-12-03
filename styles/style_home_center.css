@@ -88,7 +88,6 @@ ul li.item-menu {
     border-radius: 5px;
 }
 
-ul li.item-menu:hover,
 #activate {
     background-color: #CFE6FF;
     color: #0256AF;
@@ -104,7 +103,7 @@ ul li.item-menu a:hover {
 }
 
 ul li.logout:hover{
-    background-color: #ff6e6128;
+    background-color: #ffffff;
 }
 
 ul li.logout a:hover{
